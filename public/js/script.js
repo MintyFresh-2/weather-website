@@ -13,7 +13,7 @@ weatherForm.addEventListener("submit", (e) => {
       }
       errorMessage.textContent = "";
       forecastMessage.textContent = `${data.locationName}, ${data.locationRegion}, ${data.locationCountry}:
-        ${data.weatherDescription}. It is currently ${data.weatherTemp} degrees but it feels like ${data.weatherFeelsLike}. There is a ${data.weatherPrecipitation}% chance of precipitation. (As of ${data.observationTime})`;
+        ${data.weatherDescription}. It is currently ${data.weatherTemp} degrees but it feels like ${data.weatherFeelsLike}. There is a ${data.weatherPrecipitation}% chance of precipitation. The wind speed is ${data.weatherWindSpeed}km/h (As of ${data.observationTime})`;
       console.log(data);
     });
   });
